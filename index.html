@@ -3,11 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Gaukhar's CV</title>
   </head>
@@ -18,20 +16,39 @@
       
       <div class="container">
         <div class="info">
-          <div class="info-photo">
-            <img src="./images/gaukhar.png" alt="gaukhar" width="80%" height="80%"/>
+          <div class="info-photo-container">
+            <div class="info-photo">
+              <img src="./images/gaukhar.png" alt="gaukhar" width="80%" height="80%"/>
+            </div>
+            <div class="social-info">
+              <!-- <a id="pdf-download-permit1" class="tooltip"><i class="fa fa-file-text" aria-hidden="true"></i>
+              <span class="tooltip-text">permit 2025</span></a> -->
+              <a id="pdf-download" class="tooltip"><i class="fa fa-file-pdf"></i>
+              <a id="print-cv"><i class="fa fa-print" aria-hidden="true"></i></a>
+            </div>
           </div>
           <div class="info-details">
-            <h5 class="info-detail-work-permission">Swiss work permit: Ci</h5>
+            <!-- <h5 class="info-detail-work-permission">Swiss work permit: Ci</h5> -->
 
-            <h1 class="info-name">Gaukhar Kashaganova</h1>
-            <h5>Frontend Developer | Javascript | Typescript | Vue | React.js</h5>
-            <h5><i class="fas fa-map-marker-alt"></i>Geneva, SW</p>
-            <div class="social-info">
-              <a href="mailto:gkashag@gmail.com"><i class="fas fa-envelope-square"></i></a>
-              <a href="https://www.linkedin.com/in/gaukharka/"><i class="fab fa-linkedin"></i></a>
-              <a href="https://github.com/gaukharka"><i class="fab fa-github-square"></i></a>
+            <div class="info-name-permit">
+              <h1 class="info-name">Gaukhar Kashaganova</h1>
+              <p>Swiss Work Permit: Ci</p>
             </div>
+            <h5>Frontend Developer | Javascript | Typescript | Vue | React.js</h5>
+            <h5><i class="fas fa-map-marker-alt"></i>Geneva, SW</h5>
+            
+            <div class="social-project-container">
+              <div class="social-info-container">
+                <a href="mailto:gkashag@gmail.com">email</a>
+                <a href="https://www.linkedin.com/in/gaukharka/">linkedin</a>
+                <a href="https://github.com/gaukharka">github</a>   
+                <a id="pdf-download-permit1" class="tooltip">attestation for permit 2025</a>    
+                <a id="pdf-download-permit2" class="tooltip">attestation for permit 2027</a>        
+              </div>
+              <div class="project-container">
+                <p><a href="#projects">projects</a></p>
+              </div>
+            </div>   
           </div>
         </div>
 
@@ -75,23 +92,38 @@
           <div class="lang-list">
             <div class="lang-description">
               <p>English</p>
-              <div class="skills-stars">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</div>
+              <div class="tooltip">
+                <div class="skills-stars">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</div>
+                <span class="tooltip-text">Professional proficiency</span>
+              </div>
             </div>
             <div class="lang-description">
               <p>French</p>
-              <div class="skills-stars">⭐️ ⭐️ ⭐️<span>⭐️ ⭐️</span></div>
+              <div class="tooltip">
+                <div class="skills-stars">⭐️ ⭐️ ⭐️ <span>⭐️ ⭐️</span></div>
+                <span class="tooltip-text">Working proficiency</span>
+              </div>
             </div>
             <div class="lang-description">
               <p>Russian</p>
-              <div class="skills-stars">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</div>
+              <div class="tooltip">
+                <div class="skills-stars">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</div>
+                <span class="tooltip-text">Bilingual proficiency</span>
+              </div>
             </div>
             <div class="lang-description">
               <p>Kazakh</p>
-              <div class="skills-stars">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</div>
+              <div class="tooltip">
+                <div class="skills-stars">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</div>
+                <span class="tooltip-text">Native proficiency</span>
+              </div>
             </div>
             <div class="lang-description">
               <p>Turkish</p>
-              <div class="skills-stars">⭐️ ⭐️ ⭐️ <span>⭐️ ⭐️</span></div>
+              <div class="tooltip">
+                <div class="skills-stars">⭐️ ⭐️ ⭐️ <span>⭐️ ⭐️</span></div>
+                <span class="tooltip-text">Working proficiency</span>
+              </div>
             </div>
           </div>
         </div>
@@ -187,10 +219,10 @@
 
                 <ul class="experience-description">
                   <li>Implemented SSR features, leading to measurable improvements in page load times and SEO performance.</li>
-                  <li>Creating reusable components per design.</li>
-                  <li>Modifiying prebuilt design layout according to new designlayout.</li>
-                  <li>Fixing existing bugs in the app.</li>
-                  <li>Participating in daily stand-ups to provide updates on progress, possible obstacles and road-map on new skills.</li>
+                  <li>Created reusable components per design.</li>
+                  <li>Modified prebuilt design layout according to new design layout.</li>
+                  <li>Fixed existing bugs in the app.</li>
+                  <li>Participated in daily stand-ups to provide updates on progress, possible obstacles and road-map on new skills.</li>
                   <li><span>Technologies:</span> Javascript, React.js, Next.js, GraphQL, AWS Amplify, AWS AppSync, Git, Figma</li>
                 </ul>
               </div>
@@ -309,17 +341,57 @@
                 </ul>
               </div>
             </div>
+
+            <div class="experience-info">
+              <div class="experience-info-left">
+                <p class="experience-name">Instrumentation Engineer</p>
+                <p class="experience-date">Jun 2003 — Jan 2005</p>
+              </div>
+              <div class="experience-info-right">
+                <div class="experience-title-location">
+                  <p class="experience-title">Avtomatika</p>
+                  <p class="experience-location">
+                    <i class="fas fa-map-marker-alt"></i>Almaty, Kazakhstan
+                  </p>
+                </div>
+
+                <ul class="experience-description">
+                  <li>
+                    Designed schemas and developed installation of electrical equipments, instrumentations, control components and systems for Oil and Gas Sector
+                  </li>
+                </ul>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <div class="profile">
+        <div class="profile" id="projects">
           <h2>PROJECTS</h2>
           <hr />
           
         </div>
-
       </div>
     </div>
   </body>
-  <footer>© 2020 Gaukhar Kashaganova</footer>
+
+  <script>
+    document.getElementById("print-cv").addEventListener("click", function () {
+      window.print();
+    });
+
+    document.getElementById("pdf-download").addEventListener("click", function () {
+      window.open("GKashaganova_FE.pdf", "_blank");
+    });
+
+    document.getElementById("pdf-download-permit1").addEventListener("click", function () {
+      window.open("Gaukhar Kashaganova Attestation 2024-2025.pdf", "_blank");
+    });
+
+    document.getElementById("pdf-download-permit2").addEventListener("click", function () {
+      window.open("Gaukhar Kashaganova Attestation 2025-2027.pdf", "_blank");
+    });
+  </script>
+
+  <footer>© 2025 Gaukhar Kashaganova</footer>
 </html>
