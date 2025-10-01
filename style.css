@@ -275,7 +275,8 @@ a {
 .education-name,
 .education-title,
 .experience-name,
-.experience-title {
+.experience-title,
+.project-name {
   font-weight: bold;
   margin: 0 10px 0 0;
   font-size: 15px;
@@ -350,6 +351,19 @@ a {
   color: white;
   font-size: 1.3rem;
   margin-top: 2rem;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+}
+
+.project-name {
+  margin-bottom: 14px;
+}
+
+.project-description span {
+  font-weight: 600;
 }
 
 footer {
