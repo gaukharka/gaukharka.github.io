@@ -1,2 +1,1 @@
-# gaukharka.github.io
-Gaukhar Kashaganova Profile
+## Personal Cv website of Gaukhar Kashaganova
