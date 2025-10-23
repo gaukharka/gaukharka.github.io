@@ -1,1 +1,1 @@
-## Personal Cv website of Gaukhar Kashaganova
+## Personal CV website of Gaukhar Kashaganova
