@@ -366,6 +366,10 @@ a {
   font-weight: 600;
 }
 
+.project-subname {
+  color: #5eaaa8;
+}
+
 footer {
   font-size: 0.8rem;
   color: #5eaaa8;
