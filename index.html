@@ -1,409 +1,338 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <title>Gaukhar's CV</title>
+    <title>Gaukhar Kashaganova | Profile</title>
   </head>
 
   <body>
-    <div class="main">
-      <img src="./images/background.jpg" alt="background image" />
-      
-      <div class="container">
-        <div class="info">
-          <div class="info-photo-container">
-            <div class="info-photo">
-              <img src="./images/gaukhar.png" alt="gaukhar" width="80%" height="80%"/>
-            </div>
-            <div class="social-info">
-              <!-- <a id="pdf-download-permit1" class="tooltip"><i class="fa fa-file-text" aria-hidden="true"></i>
-              <span class="tooltip-text">permit 2025</span></a> -->
-              <a id="pdf-download" class="tooltip"><i class="fa fa-file-pdf"></i>
-              <a id="print-cv"><i class="fa fa-print" aria-hidden="true"></i></a>
-            </div>
-          </div>
-          <div class="info-details">
-            <!-- <h5 class="info-detail-work-permission">Swiss work permit: Ci</h5> -->
-
-            <div class="info-name-permit">
-              <h1 class="info-name">Gaukhar Kashaganova</h1>
-              <p>Swiss Work Permit: Ci</p>
-            </div>
-            <h5>Frontend Developer | Javascript | Typescript | Vue | React.js</h5>
-            <h5><i class="fas fa-map-marker-alt"></i>Geneva, SW</h5>
-            
-            <div class="social-project-container">
-              <div class="social-info-container">
-                <a href="mailto:gkashag@gmail.com">email</a>
-                <a href="https://www.linkedin.com/in/gaukharka/">linkedin</a>
-                <a href="https://github.com/gaukharka">github</a>   
-                <a id="pdf-download-permit1" class="tooltip">attestation for permit 2025</a>    
-                <a id="pdf-download-permit2" class="tooltip">attestation for permit 2027</a>        
-              </div>
-              <div class="project-container">
-                <p><a href="#projects">projects</a></p>
-              </div>
-            </div>   
-          </div>
+    <div class="page">
+      <header class="global-nav">
+        <div class="global-nav__inner">
+          <span class="global-nav__brand">Profile</span>
+          <span class="global-nav__hint">CV · Geneva</span>
         </div>
+      </header>
 
-        <div class="summary">
-          <h2>SUMMARY</h2>
-          <hr />
-          <p>
-            Experienced Frontend Developer with 4+ years of frontend development expertise and a strong background in industrial
-            engineering. Proficient in modern frontend technologies (React, Vue.js, TypeScript) and backend tools (Node.js, Java).
-            Passionate about building scalable, user-friendly applications and exploring emerging technologies like AI/LLM. Seeking
-            opportunities to contribute to innovative projects while continuing to grow as a developer.
-          </p>
-        </div>
+      <div class="layout">
+        <main class="layout__main">
+          <section class="li-card li-card--profile" aria-label="Profile introduction">
+            <div class="profile-cover">
+              <img src="./images/background.jpg" alt="" />
+            </div>
+            <div class="profile-card__body">
+              <div class="profile-card__row">
+                <div class="profile-avatar">
+                  <img src="./images/gaukhar.png" alt="Gaukhar Kashaganova" width="160" height="160" />
+                </div>
+                <div class="profile-card__actions">
+                  <button type="button" id="pdf-download" class="li-btn li-btn--primary" title="Open CV PDF">
+                    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                    Resume
+                  </button>
+                  <button type="button" id="print-cv" class="li-btn li-btn--secondary" title="Print">
+                    <i class="fa-solid fa-print" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <h1 class="profile-name">Gaukhar Kashaganova</h1>
+              <p class="profile-headline">Frontend Developer · JavaScript · TypeScript · Vue · React</p>
+              <p class="profile-meta">
+                <span class="profile-meta__item"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Geneva, Switzerland</span>
+                <span class="profile-meta__item profile-meta__item--muted">Swiss work permit: Ci</span>
+              </p>
+              <nav class="profile-links" aria-label="Contact and links">
+                <a class="profile-links__a" href="mailto:gkashag@gmail.com">Email</a>
+                <a class="profile-links__a" href="https://www.linkedin.com/in/gaukharka/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a class="profile-links__a" href="https://github.com/gaukharka" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="profile-links__a" href="#projects">Projects</a>
+                <button type="button" id="pdf-download-permit1" class="profile-links__btn">Attestation 2024–2025</button>
+                <button type="button" id="pdf-download-permit2" class="profile-links__btn">Attestation 2025–2027</button>
+              </nav>
+            </div>
+          </section>
 
-        <div class="skills">
-          <h2>SKILLS</h2>
-          <hr />
-          <div class="skills-list-section">
-            <div class="skills-description">
+          <section class="li-card li-section" id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading" class="li-section__title">About</h2>
+            <div class="li-section__text about-body">
               <p>
-                <span class="skill-description-title">Frontend: </span>
-                <span class="skill-description-items">HTML, CSS(SCSS), Javascript, Typescript, Vue, React.js, Redux</span>
+                I’m a full stack developer with 5+ years of experience building web and mobile applications using React, TypeScript, and Firebase.
+              </p>
+              <p>
+                Recently, I’ve been focused on building products end-to-end — from idea to production — including mobile apps and platforms in the productivity and mental health space.
+              </p>
+              <p>
+                One of my projects, Tusk, started as a tool for my son (AuDHD) to help him capture tasks quickly without being overwhelmed by complex interfaces. That experience shaped how I think about product design — simple, low-friction, and user-first.
+              </p>
+              <p>
+                I enjoy working across the full stack: designing UI, building backend logic, integrating APIs, and shipping to production. I also actively use AI-assisted development tools to move faster and iterate on ideas.
+              </p>
+              <div class="about-interests">
+                <p>I’m particularly interested in:</p>
+                <ul class="about-list">
+                  <li>productivity and mental health products</li>
+                  <li>low-friction UX and voice-first interfaces</li>
+                  <li>AI-driven features</li>
+                </ul>
+              </div>
+              <p>
+                Currently open to remote opportunities where I can contribute to building meaningful, user-centered products.
               </p>
             </div>
-            <div class="skills-description">
-              <p><span class="skill-description-title">Backend: </span><span class="skill-description-items">Java, Python, Node.js, MongoDB, Firebase</span></p>
-            </div>
-            <div class="skills-description">
-              <p><span class="skill-description-title">Tools: </span><span class="skill-description-items">Cypress, Figma, Git, Bitbucket</span></p>
-            </div>
-            <div class="skills-description">
-              <p><span class="skill-description-title">Other: </span><span class="skill-description-items">Software testing, Debugging, API Integration, Responsive Design</span></p>
-            </div>
-          </div>
-        </div>
+          </section>
 
-        <div class="languages">
-          <h2>LANGUAGES</h2>
-          <hr />
+          <section class="li-card li-section" id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading" class="li-section__title">Projects</h2>
+            <div class="project-row">
+              <a class="project-row__link" href="https://sanacare.kz/" target="_blank" rel="noopener noreferrer">
+                <span class="project-row__media">
+                  <img src="./images/sanacare.jpg" alt="" width="48" height="48" decoding="async" loading="lazy" />
+                </span>
+                <span class="project-row__text">
+                  <span class="project-row__name">Sanacare.kz</span>
+                  <span class="project-row__desc"> — Easy booking with psychologists</span>
+                </span>
+                <i class="fa-solid fa-arrow-up-right-from-square project-row__icon" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="project-row">
+              <a
+                class="project-row__link"
+                href="https://apps.apple.com/fr/app/tusk-voice-task-manager/id6758037626?l=en-GB"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="project-row__media">
+                  <img src="./images/tusk.svg" alt="" width="48" height="48" decoding="async" loading="lazy" />
+                </span>
+                <span class="project-row__text">
+                  <span class="project-row__name">Tusk</span>
+                  <span class="project-row__desc"> — Voice to-dos &amp; smart reminders (iOS · App Store)</span>
+                </span>
+                <i class="fa-solid fa-arrow-up-right-from-square project-row__icon" aria-hidden="true"></i>
+              </a>
+            </div>
+          </section>
 
-          <div class="lang-list">
-            <div class="lang-description">
-              <p>English</p>
-              <div class="tooltip">
-                <div class="skills-stars">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</div>
-                <span class="tooltip-text">Professional proficiency</span>
-              </div>
-            </div>
-            <div class="lang-description">
-              <p>French</p>
-              <div class="tooltip">
-                <div class="skills-stars">⭐️ ⭐️ ⭐️ <span>⭐️ ⭐️</span></div>
-                <span class="tooltip-text">Working proficiency</span>
-              </div>
-            </div>
-            <div class="lang-description">
-              <p>Russian</p>
-              <div class="tooltip">
-                <div class="skills-stars">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</div>
-                <span class="tooltip-text">Bilingual proficiency</span>
-              </div>
-            </div>
-            <div class="lang-description">
-              <p>Kazakh</p>
-              <div class="tooltip">
-                <div class="skills-stars">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</div>
-                <span class="tooltip-text">Native proficiency</span>
-              </div>
-            </div>
-            <div class="lang-description">
-              <p>Turkish</p>
-              <div class="tooltip">
-                <div class="skills-stars">⭐️ ⭐️ ⭐️ <span>⭐️ ⭐️</span></div>
-                <span class="tooltip-text">Working proficiency</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="education">
-          <h2>EDUCATION</h2>
-          <hr />
-
-          <div class="education-container">
-            <div class="education-info">
-              <div class="education-info-left">
-                <p class="education-name">State University of New York</p>
-                <p class="education-date">Sep 2010 - Jun 2013</p>
-              </div>
-              <div class="education-info-right">
-                <p class="education-title">
-                  Master of Science in Industrial and Systems Engineering
-                </p>
-                <p class="education-description">
-                  <b>Master Thesis</b>: “Simulation-based Analysis of the Impact
-                  of Information, Cooperation and Forecasting Techniques on
-                  Bullwhip Effect in Multi-Stage Supply Chain.”
-                </p>
-                <p class="education-location">
-                  <i class="fas fa-map-marker-alt"></i>Binghamton, NY, USA
-                </p>
-              </div>
-            </div>
-
-            <div class="education-info">
-              <div class="education-info-left">
-                <p class="education-name">
-                  Almaty University of Power and Telecommunications
-                </p>
-                <p class="education-date">Sep 1998 - Jun 2003</p>
-              </div>
-              <div class="education-info-right">
-                <p class="education-title">
-                  Bachelor of Science in Electrical Engineering
-                </p>
-                <p class="education-description">
-                  <b>Thesis</b>: "Development of automation system of
-                  biotechnology."
-                </p>
-                <p class="education-location">
-                  <i class="fas fa-map-marker-alt"></i>Almaty, Kazakhstan
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="experience">
-          <h2>EXPERIENCE</h2>
-          <hr />
-
-          <div class="experience-container">
-            <div class="experience-info">
-              <div class="experience-info-left">
-                <p class="experience-name">Frontend Developer</p>
-                <p class="experience-date">Jan 2023 — Jan 2025</p>
-              </div>
-              <div class="experience-info-right">
-                <div class="experience-title-location">
-                  <p class="experience-title">Khresterion</p>
-                  <p class="experience-location">
-                    <i class="fas fa-map-marker-alt"></i>Remote/Full-time
-                  </p>
+          <section class="li-card li-section" aria-labelledby="experience-heading">
+            <h2 id="experience-heading" class="li-section__title">Experience</h2>
+            <ul class="timeline">
+              <li class="timeline__item">
+                <div class="timeline__logo" aria-hidden="true">F</div>
+                <div class="timeline__content">
+                  <h3 class="timeline__title">Full Stack Developer (Freelance)</h3>
+                  <p class="timeline__company">Freelance</p>
+                  <p class="timeline__dates">Jan 2025 — Present · <span class="timeline__muted">Remote</span></p>
+                  <ul class="timeline__bullets">
+                    <li>
+                      Developing and launching mobile and web applications, including:
+                      <ul class="timeline__bullets timeline__bullets--nested">
+                        <li><strong>Tusk</strong> — a voice-powered task manager focused on low-friction task capture and minimal UX</li>
+                        <li><strong>SanaCare</strong> — a mental health platform connecting users with therapists</li>
+                      </ul>
+                    </li>
+                    <li>Designing and implementing full-stack architecture using React Native, TypeScript, Firebase, and Node.js</li>
+                    <li>Building and iterating on product features based on user feedback (voice input, reminders, smart categorization, booking flows)</li>
+                    <li>Managing end-to-end development: UI/UX, backend logic, deployment, and App Store releases</li>
+                    <li>Working with tools like Figma, Firebase (Auth, Firestore, Functions), and Expo</li>
+                  </ul>
                 </div>
-
-                <ul class="experience-description">
-                  <li>Co-led the development of a Component Library, streamlining UI consistency and reducing repetitive code across projects. The
-                      library became a foundational tool for all frontend teams, cutting development time significantly</li>
-                  <li>Resolved 50+ customer-reported bugs improving app stability.</li>
-                  <li>Participated in daily stand-ups to provide updates and collaborate with team members.</li>
-                  <li>Technologies: Typescript, Vue.js, Java, Python, Cypress, Bitbucket, Figma, MongoDB</li>
-                </ul>
-              </div>
-            </div> 
-
-            <div class="experience-info">
-              <div class="experience-info-left">
-                <p class="experience-name">Frontend Developer</p>
-                <p class="experience-date">Nov 2021 — Dec 2022</p>
-              </div>
-              <div class="experience-info-right">
-                <div class="experience-title-location">
-                  <p class="experience-title">Sanomind</p>
-                  <p class="experience-location">
-                    <i class="fas fa-map-marker-alt"></i>Remote/Full-time
-                  </p>
+              </li>
+              <li class="timeline__item">
+                <div class="timeline__logo" aria-hidden="true">K</div>
+                <div class="timeline__content">
+                  <h3 class="timeline__title">Frontend Developer</h3>
+                  <p class="timeline__company">Khresterion</p>
+                  <p class="timeline__dates">Jan 2023 — Jan 2025 · <span class="timeline__muted">Remote · Full-time</span></p>
+                  <ul class="timeline__bullets">
+                    <li>Co-led the development of a Component Library, streamlining UI consistency and reducing repetitive code across projects. The library became a foundational tool for all frontend teams, cutting development time significantly.</li>
+                    <li>Resolved 50+ customer-reported bugs improving app stability.</li>
+                    <li>Participated in daily stand-ups to provide updates and collaborate with team members.</li>
+                    <li><strong>Technologies:</strong> TypeScript, Vue.js, Java, Python, Cypress, Bitbucket, Figma, MongoDB</li>
+                  </ul>
                 </div>
-
-                <ul class="experience-description">
-                  <li>Implemented SSR features, leading to measurable improvements in page load times and SEO performance.</li>
-                  <li>Created reusable components per design.</li>
-                  <li>Modified prebuilt design layout according to new design layout.</li>
-                  <li>Fixed existing bugs in the app.</li>
-                  <li>Participated in daily stand-ups to provide updates on progress, possible obstacles and road-map on new skills.</li>
-                  <li><span>Technologies:</span> Javascript, React.js, Next.js, GraphQL, AWS Amplify, AWS AppSync, Git, Figma</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="experience-info">
-              <div class="experience-info-left">
-                <p class="experience-name">Frontend Developer Intern</p>
-                <p class="experience-date">Oct 2020 — Apr 2021</p>
-              </div>
-              <div class="experience-info-right">
-                <div class="experience-title-location">
-                  <p class="experience-title">AcceleratorApp</p>
-                  <p class="experience-location">
-                    <i class="fas fa-map-marker-alt"></i>Remote/Full-time
-                  </p>
+              </li>
+              <li class="timeline__item">
+                <div class="timeline__logo" aria-hidden="true">S</div>
+                <div class="timeline__content">
+                  <h3 class="timeline__title">Frontend Developer</h3>
+                  <p class="timeline__company">Sanomind</p>
+                  <p class="timeline__dates">Nov 2021 — Dec 2022 · <span class="timeline__muted">Remote · Full-time</span></p>
+                  <ul class="timeline__bullets">
+                    <li>Implemented SSR features, leading to measurable improvements in page load times and SEO performance.</li>
+                    <li>Created reusable components per design.</li>
+                    <li>Modified prebuilt design layout according to new design layout.</li>
+                    <li>Fixed existing bugs in the app.</li>
+                    <li>Participated in daily stand-ups to provide updates on progress, possible obstacles and road-map on new skills.</li>
+                    <li><strong>Technologies:</strong> JavaScript, React.js, Next.js, GraphQL, AWS Amplify, AWS AppSync, Git, Figma</li>
+                  </ul>
                 </div>
-
-                <ul class="experience-description">
-                  <li>Developed dynamic PDF templates using EJS, automating previously manual processes and saving the team significant time.</li>
-                  <li>Implemented Right-to-Left (RTL) UI support for Arabic users.</li>
-                  <li>Debugged and fixed existing bugs in the app.</li>
-                  <li>Participated in daily stand-ups to provide updates on progress.</li>
-                  <li><span>Technologies: </span>SCSS, Typescript, React.js, GraphQL, Git.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-          
-        <div class="experience">
-          <h2>OTHER EXPERIENCE</h2>
-          <hr />
-          <div class="experience-container"></div>
-
-            <div class="experience-info">
-              <div class="experience-info-left">
-                <p class="experience-name">SAP Consultant</p>
-                <p class="experience-date">Sep 2017 - Jan 2018</p>
-              </div>
-              <div class="experience-info-right">
-                <div class="experience-title-location">
-                  <p class="experience-title">Richfit International</p>
-                  <p class="experience-location">
-                    <i class="fas fa-map-marker-alt"></i>Almaty, Kazakhstan
-                  </p>
+              </li>
+              <li class="timeline__item">
+                <div class="timeline__logo" aria-hidden="true">A</div>
+                <div class="timeline__content">
+                  <h3 class="timeline__title">Frontend Developer Intern</h3>
+                  <p class="timeline__company">AcceleratorApp</p>
+                  <p class="timeline__dates">Oct 2020 — Apr 2021 · <span class="timeline__muted">Remote · Full-time</span></p>
+                  <ul class="timeline__bullets">
+                    <li>Developed dynamic PDF templates using EJS, automating previously manual processes and saving the team significant time.</li>
+                    <li>Implemented Right-to-Left (RTL) UI support for Arabic users.</li>
+                    <li>Debugged and fixed existing bugs in the app.</li>
+                    <li>Participated in daily stand-ups to provide updates on progress.</li>
+                    <li><strong>Technologies:</strong> SCSS, TypeScript, React.js, GraphQL, Git.</li>
+                  </ul>
                 </div>
+              </li>
+            </ul>
+          </section>
 
-                <ul class="experience-description">
-                  <li>Technical support of «Tax Payment system», user manual
-                    preparation, end-user training; handling queries, monitoring
-                    urgent incidents and providing solutions.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="experience-info">
-              <div class="experience-info-left">
-                <p class="experience-name">SAP BI Consultant</p>
-                <p class="experience-date">Apr 2016 — Mar 2017</p>
-              </div>
-              <div class="experience-info-right">
-                <div class="experience-title-location">
-                  <p class="experience-title">Business Applications Solutions</p>
-                  <p class="experience-location">
-                    <i class="fas fa-map-marker-alt"></i>Almaty, Kazakhstan
-                  </p>
+          <section class="li-card li-section" aria-labelledby="other-exp-heading">
+            <h2 id="other-exp-heading" class="li-section__title">Other experience</h2>
+            <ul class="timeline">
+              <li class="timeline__item">
+                <div class="timeline__logo timeline__logo--muted" aria-hidden="true">R</div>
+                <div class="timeline__content">
+                  <h3 class="timeline__title">SAP Consultant</h3>
+                  <p class="timeline__company">Richfit International</p>
+                  <p class="timeline__dates">Sep 2017 — Jan 2018 · <span class="timeline__muted">Almaty, Kazakhstan</span></p>
+                  <ul class="timeline__bullets">
+                    <li>Technical support of «Tax Payment system», user manual preparation, end-user training; handling queries, monitoring urgent incidents and providing solutions.</li>
+                  </ul>
                 </div>
-
-                <ul class="experience-description">
-                  <li>Analyzed client’s business requirements, developed and
-                    implemented SAP BO Analytical solutions according to the
-                    client’s business processes and requirements.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="experience-info">
-              <div class="experience-info-left">
-                <p class="experience-name">SAP MM Consultant Trainee</p>
-                <p class="experience-date">May 2012 — Oct 2012</p>
-              </div>
-              <div class="experience-info-right">
-                <div class="experience-title-location">
-                  <p class="experience-title">Key Century</p>
-                  <p class="experience-location">
-                    <i class="fas fa-map-marker-alt"></i>Almaty, Kazakhstan
-                  </p>
+              </li>
+              <li class="timeline__item">
+                <div class="timeline__logo timeline__logo--muted" aria-hidden="true">B</div>
+                <div class="timeline__content">
+                  <h3 class="timeline__title">SAP BI Consultant</h3>
+                  <p class="timeline__company">Business Applications Solutions</p>
+                  <p class="timeline__dates">Apr 2016 — Mar 2017 · <span class="timeline__muted">Almaty, Kazakhstan</span></p>
+                  <ul class="timeline__bullets">
+                    <li>Analyzed client’s business requirements, developed and implemented SAP BO Analytical solutions according to the client’s business processes and requirements.</li>
+                  </ul>
                 </div>
-
-                <ul class="experience-description">
-                  <li>SAP Material Management System Support.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="experience-info">
-              <div class="experience-info-left">
-                <p class="experience-name">Instrumentation Engineer</p>
-                <p class="experience-date">Jan 2005 — May 2006</p>
-              </div>
-              <div class="experience-info-right">
-                <div class="experience-title-location">
-                  <p class="experience-title">SpecStroiProekt</p>
-                  <p class="experience-location">
-                    <i class="fas fa-map-marker-alt"></i>Almaty/Atyrau, Kazakhstan
-                  </p>
+              </li>
+              <li class="timeline__item">
+                <div class="timeline__logo timeline__logo--muted" aria-hidden="true">K</div>
+                <div class="timeline__content">
+                  <h3 class="timeline__title">SAP MM Consultant Trainee</h3>
+                  <p class="timeline__company">Key Century</p>
+                  <p class="timeline__dates">May 2012 — Oct 2012 · <span class="timeline__muted">Almaty, Kazakhstan</span></p>
+                  <ul class="timeline__bullets">
+                    <li>SAP Material Management System Support.</li>
+                  </ul>
                 </div>
-
-                <ul class="experience-description">
-                  <li>
-                    Provided QA of instruments (thermometer, pressure gauges,
-                    flowmeters), tests and inspections, coordinated technical
-                    drawings and reports to my supervisor.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="experience-info">
-              <div class="experience-info-left">
-                <p class="experience-name">Instrumentation Engineer</p>
-                <p class="experience-date">Jun 2003 — Jan 2005</p>
-              </div>
-              <div class="experience-info-right">
-                <div class="experience-title-location">
-                  <p class="experience-title">Avtomatika</p>
-                  <p class="experience-location">
-                    <i class="fas fa-map-marker-alt"></i>Almaty, Kazakhstan
-                  </p>
+              </li>
+              <li class="timeline__item">
+                <div class="timeline__logo timeline__logo--muted" aria-hidden="true">S</div>
+                <div class="timeline__content">
+                  <h3 class="timeline__title">Instrumentation Engineer</h3>
+                  <p class="timeline__company">SpecStroiProekt</p>
+                  <p class="timeline__dates">Jan 2005 — May 2006 · <span class="timeline__muted">Almaty / Atyrau, Kazakhstan</span></p>
+                  <ul class="timeline__bullets">
+                    <li>Provided QA of instruments (thermometer, pressure gauges, flowmeters), tests and inspections, coordinated technical drawings and reports to my supervisor.</li>
+                  </ul>
                 </div>
+              </li>
+              <li class="timeline__item">
+                <div class="timeline__logo timeline__logo--muted" aria-hidden="true">A</div>
+                <div class="timeline__content">
+                  <h3 class="timeline__title">Instrumentation Engineer</h3>
+                  <p class="timeline__company">Avtomatika</p>
+                  <p class="timeline__dates">Jun 2003 — Jan 2005 · <span class="timeline__muted">Almaty, Kazakhstan</span></p>
+                  <ul class="timeline__bullets">
+                    <li>Designed schemas and developed installation of electrical equipment, instrumentation, control components and systems for the oil and gas sector.</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-                <ul class="experience-description">
-                  <li>
-                    Designed schemas and developed installation of electrical equipments, instrumentations, control components and systems for Oil and Gas Sector
-                  </li>
-                </ul>
-              </div>
+          <section class="li-card li-section" aria-labelledby="education-heading">
+            <h2 id="education-heading" class="li-section__title">Education</h2>
+            <ul class="timeline">
+              <li class="timeline__item">
+                <div class="timeline__logo timeline__logo--wide" aria-hidden="true">SUNY</div>
+                <div class="timeline__content">
+                  <h3 class="timeline__title">State University of New York</h3>
+                  <p class="timeline__company">Master of Science, Industrial and Systems Engineering</p>
+                  <p class="timeline__dates">Sep 2010 — Jun 2013 · <span class="timeline__muted">Binghamton, NY, USA</span></p>
+                  <p class="timeline__detail"><strong>Master thesis:</strong> “Simulation-based Analysis of the Impact of Information, Cooperation and Forecasting Techniques on Bullwhip Effect in Multi-Stage Supply Chain.”</p>
+                </div>
+              </li>
+              <li class="timeline__item">
+                <div class="timeline__logo timeline__logo--wide" aria-hidden="true">AUPT</div>
+                <div class="timeline__content">
+                  <h3 class="timeline__title">Almaty University of Power and Telecommunications</h3>
+                  <p class="timeline__company">Bachelor of Science, Electrical Engineering</p>
+                  <p class="timeline__dates">Sep 1998 — Jun 2003 · <span class="timeline__muted">Almaty, Kazakhstan</span></p>
+                  <p class="timeline__detail"><strong>Thesis:</strong> "Development of automation system of biotechnology."</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </main>
+
+        <aside class="layout__aside" aria-label="Skills and languages">
+          <section class="li-card li-section">
+            <h2 class="li-section__title">Skills</h2>
+            <div class="chip-list">
+              <span class="chip"><span class="chip__label">Frontend</span> HTML, CSS (SCSS), JavaScript, TypeScript, Vue, React, Redux</span>
+              <span class="chip"><span class="chip__label">Backend</span> Java, Node.js, MongoDB, Firebase</span>
+              <span class="chip"><span class="chip__label">Tools</span> Cypress, Figma, Git, Bitbucket, AI-assisted development (Cursor, ChatGPT)</span>
+              <span class="chip"><span class="chip__label">Other</span> Software testing, debugging, API integration, responsive design</span>
             </div>
+          </section>
 
-          </div>
-        </div>
-
-        <div class="profile" id="projects">
-          <h2>PROJECTS</h2>
-          <hr />
-          
-          <div class="projects-list">
-            <div class="project-item">
-              <a href="https://sanacare.kz/"><p class="project-name"><span class="project-subname">Sanacare.kz</span> - Easy booking with psychologists</p></a>
-              <!-- <p>|</p> -->
-              <!-- <p class="experience-date"> Feb 2025 – Present</p> -->
-            </div>
-            <!-- <div class="project-description">
-              <ul>
-                <li><p><span>Technologies:</span> TypeScript, React, Firebase</p></li>
-              </ul>
-            </div> -->
-          </div>
-        </div>
+          <section class="li-card li-section">
+            <h2 class="li-section__title">Languages</h2>
+            <ul class="lang-list">
+              <li class="lang-list__item">
+                <span class="lang-list__name">English</span>
+                <span class="lang-list__level" title="Professional proficiency">Professional</span>
+              </li>
+              <li class="lang-list__item">
+                <span class="lang-list__name">French</span>
+                <span class="lang-list__level" title="Working proficiency">Working</span>
+              </li>
+              <li class="lang-list__item">
+                <span class="lang-list__name">Russian</span>
+                <span class="lang-list__level" title="Bilingual proficiency">Bilingual</span>
+              </li>
+              <li class="lang-list__item">
+                <span class="lang-list__name">Kazakh</span>
+                <span class="lang-list__level" title="Native proficiency">Native</span>
+              </li>
+              <li class="lang-list__item">
+                <span class="lang-list__name">Turkish</span>
+                <span class="lang-list__level" title="Working proficiency">Working</span>
+              </li>
+            </ul>
+          </section>
+        </aside>
       </div>
+
+      <footer class="site-footer">© 2025 Gaukhar Kashaganova</footer>
     </div>
+
+    <script>
+      document.getElementById("print-cv").addEventListener("click", function () {
+        window.print();
+      });
+
+      document.getElementById("pdf-download").addEventListener("click", function () {
+        window.open("GKashaganova_FE.pdf", "_blank");
+      });
+
+      document.getElementById("pdf-download-permit1").addEventListener("click", function () {
+        window.open("Gaukhar Kashaganova Attestation 2024-2025.pdf", "_blank");
+      });
+
+      document.getElementById("pdf-download-permit2").addEventListener("click", function () {
+        window.open("Gaukhar Kashaganova Attestation 2025-2027.pdf", "_blank");
+      });
+    </script>
   </body>
-
-  <script>
-    document.getElementById("print-cv").addEventListener("click", function () {
-      window.print();
-    });
-
-    document.getElementById("pdf-download").addEventListener("click", function () {
-      window.open("GKashaganova_FE.pdf", "_blank");
-    });
-
-    document.getElementById("pdf-download-permit1").addEventListener("click", function () {
-      window.open("Gaukhar Kashaganova Attestation 2024-2025.pdf", "_blank");
-    });
-
-    document.getElementById("pdf-download-permit2").addEventListener("click", function () {
-      window.open("Gaukhar Kashaganova Attestation 2025-2027.pdf", "_blank");
-    });
-  </script>
-
-  <footer>© 2025 Gaukhar Kashaganova</footer>
 </html>
